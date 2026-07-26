@@ -72,12 +72,9 @@ int main()
                     state.value);
 
                 LOG("Receiver", "Sending value: ", state.value);
-            }
 
-            initiatorSemaphore.post();
-
-            if (state.value >= 10)
-            {
+                initiatorSemaphore.post();
+            } else {
                 LOG("Receiver",
                     "Termination value reached.");
 
