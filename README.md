@@ -5,7 +5,7 @@ A more robust architecture would have the initiator create and initialize the IP
 
 That design is cleaner, race-free, and closer to production-quality C++ systems programming.
 
-# To build
+# Build
 ```
 mkdir build
 cd build
@@ -19,12 +19,12 @@ cmake -DENABLE_LOGGING=OFF ..
 make -j
 ```
 
-# To Run in terminal 1
+# Run in terminal 1
 ```
 ./receiver
 ```
 
-# To Run in terminal 2
+# Run in terminal 2
 ```
 ./initiator
 ```
